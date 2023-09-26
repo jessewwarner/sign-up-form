@@ -19,6 +19,7 @@ fieldset,
 
 .main-wrapper {
     max-width: 1080px;
+    min-height: 960px;
     width: 100%;
     margin: 0 auto;
     background-color: rgb(160, 160, 160);
@@ -58,6 +59,7 @@ fieldset,
 .right-frame {
     flex-direction: column;
     width: 60%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .top {
@@ -83,7 +85,6 @@ form {
     justify-content: center;
     height: 30vh;
     background-color: rgb(36, 36, 36);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1rem;
     color: wheat;
     padding: 30px;
@@ -111,7 +112,6 @@ fieldset {
 input {
     width: 90%;
     height: 2rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.25rem;
     padding-left: 10px;
     border-radius: 5px;
@@ -125,4 +125,24 @@ input {
 
 .bottom {
     height: 35vh;
+    padding: 30px;
+}
+
+button {
+    background-color: rgb(17, 17, 53);
+    color:wheat;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    padding: 10px 50px;
+    margin-bottom: 30px;
+}
+
+.login {
+    font-size: 1.5rem;
+}
+
+a {
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(20, 20, 77);
 }
