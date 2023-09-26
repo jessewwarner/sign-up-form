@@ -36,11 +36,11 @@
                     <legend>Contact</legend>
                     <div class="form-group">
                         <label for="mail">Email</label>
-                        <input type="email" name="mail" id="mail">
+                        <input type="email" name="mail" id="mail" pattern="^[a-zA-Z0-9_\-\.]+@[a-zA-Z0-9\-]+\.[a-zA-Z]{2,}$" placeholder="youremail@xyz.com">
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" name="phone" id="phone">
+                        <input type="tel" name="phone" id="phone" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="###-###-####">
                     </div>
                 </fieldset>
                 <fieldset class="password-field">
@@ -52,12 +52,12 @@
                     <div class="form-group">
                         <label for="cpwd">Confirm Password</label>
                         <input type="password" name="cpwd" id="cpwd">
-                        <div class="pwd-match-error">* Passwords do not match</div>
+                        <div class="pwd-match-error">&nbsp;</div>
                     </div>
                 </fieldset>
             </form>
             <section class="bottom">
-                <button form="sign-up-form">Create Account</button>
+                <button class="btn">Create Account</button>
                 <p class="login">Already have an account? <a href="https://github.com/jessewwarner/sign-up-form">Log in</a></p>
             </section>
         </div>
