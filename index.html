@@ -7,6 +7,60 @@
     <title>Fake Sign-Up Form</title>
 </head>
 <body>
+    <div class="main-wrapper">
+        <div class="left-frame">
+            <div class="logo">
+                <img class="logo-img" src="images/skull-logo-trans-bg.png" alt="Odin logo">
+                <span class="logo-text">Odin</span>
+            </div>
+        </div>
+        <div class="right-frame">
+            <section class="top">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium cum rerum magni ut temporibus? Eligendi distinctio praesentium quae, harum cum natus aliquam quis, facere quas eius qui veritatis, aspernatur tempora!</p>
+                <p>You <em>know</em> you want to.</p>
+            </section>
+            <form id="sign-up-form" action="">
+                <h1>Let's do this!</h1>
+                <fieldset class="name-field">
+                    <legend>Name</legend>
+                    <div class="form-group">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name">
+                    </div>
+                </fieldset>
+                <fieldset class="contact-field">
+                    <legend>Contact</legend>
+                    <div class="form-group">
+                        <label for="mail">Email</label>
+                        <input type="email" name="mail" id="mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                </fieldset>
+                <fieldset class="password-field">
+                    <legend>Password</legend>
+                    <div class="form-group">
+                        <label for="pwd">Password</label>
+                        <input type="password" name="pwd" id="pwd">
+                    </div>
+                    <div class="form-group">
+                        <label for="cpwd">Confirm Password</label>
+                        <input type="password" name="cpwd" id="cpwd">
+                    </div>
+                </fieldset>
+            </form>
+            <section class="bottom">
+                <button form="sign-up-form">Create Account</button>
+                <p>Already have an account? <a href="https://github.com/jessewwarner/sign-up-form">Log in</a></p>
+            </section>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
