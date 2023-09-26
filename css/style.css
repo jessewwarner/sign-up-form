@@ -8,10 +8,12 @@ body {
     background-color: rgb(48, 48, 48);
 }
 
+fieldset,
 .main-wrapper,
 .right-frame,
 #sign-up-form,
-.logo {
+.logo,
+.top {
     display: flex;
 }
 
@@ -28,12 +30,6 @@ body {
     background-image: url(/images/sign-up-bg-large.png);
     background-size: cover;
     background-position: center center;
-}
-
-.right-frame {
-    flex-direction: column;
-    justify-content: center;
-    width: 60%;
 }
 
 .logo {
@@ -59,12 +55,74 @@ body {
 
 }
 
+.right-frame {
+    flex-direction: column;
+    width: 60%;
+}
+
 .top {
+    flex-direction: column;
+    justify-content: flex-end;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2rem;
+    height: 35vh;
     padding: 30px
 }
 
 p {
     margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+form {
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+    background-color: rgb(36, 36, 36);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    color: wheat;
+    padding: 30px;
+}
+
+.form-group{
+    width: 50%;
+    margin: 10px 0px;
+}
+
+legend {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+fieldset {
+    border: none;
+}
+
+input {
+    width: 90%;
+    height: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.25rem;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin-bottom: 4px;
+}
+
+.pwd-match-error {
+    font-size: 0.75rem;
+    color: red;
+}
+
+.bottom {
+    height: 35vh;
 }
