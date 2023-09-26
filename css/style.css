@@ -16,7 +16,7 @@ body {
 }
 
 .main-wrapper {
-    max-width: 900px;
+    max-width: 1080px;
     width: 100%;
     margin: 0 auto;
     background-color: rgb(160, 160, 160);
@@ -32,7 +32,7 @@ body {
 
 .right-frame {
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 60%;
 }
 
@@ -57,4 +57,14 @@ body {
     font-size: 6rem;
     color: wheat;
 
+}
+
+.top {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    padding: 30px
+}
+
+p {
+    margin-bottom: 20px;
 }
