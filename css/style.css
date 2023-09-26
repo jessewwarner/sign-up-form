@@ -39,19 +39,20 @@ fieldset,
     background-color: rgba(0, 0, 0, 0.6);
     position: relative;
     top: calc(35% - 150px);
-    padding: 15px;
+    height: 150px;
+    padding: 10px;
 }
 
 .logo-img {
-    width: 120px;
-    height: 120px;
-    margin-right: 20px;
+    height: 100%;
+    width: auto;
     flex: 0;
 }
 
 .logo-text {
     font-size: 6rem;
     color: wheat;
+    padding: 10px;
 }
 
 .right-frame {
@@ -69,7 +70,7 @@ fieldset,
 }
 
 p {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 label {
@@ -149,264 +150,86 @@ a {
     color: rgb(20, 20, 77);
 }
 
+@media (max-width: 850px){
+    :root {
+        font-size: 0.95em;
+    }
+    
+    .logo {
+        height: 135px;
+    }
+}
+
+@media (max-width: 768px){
+    .main-wrapper {
+        flex-direction: column;
+    }
+
+    .left-frame {
+        width: 100%;
+        background-image: url(/images/sign-up-bg-small.png);
+    }
+
+    .logo {
+        position: static;
+    }
+
+    .right-frame {
+        width: 100%;
+        text-align: center; 
+    }
+
+    .top {
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+
+    #sign-up-form {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        margin-bottom: 8px;
+    }
+
+    fieldset {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100%;
+        margin: 3px 0;
+    }
+
+    .bottom {
+        padding: 15px;
+    }
+
+    button {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 600px){
+    :root {
+        font-size: 0.87em;
+    }
+
+    .logo {
+        height: 115px;
+    }
+}
+
 @media (max-width: 400px){
-    .main-wrapper {
-        flex-direction: column;
-    }
-
-    .left-frame {
-        width: 100%;
-        background-image: url(/images/sign-up-bg-small.png);
+    :root {
+        font-size: 0.8em;
     }
 
     .logo {
-        position: static;
         height: 90px;
     }
-
-    .logo-img {
-        width: 75px;
-        height: 75px;
-    }
-
-    .logo-text {
-        font-size: 3.5rem;
-    }
-
-    .right-frame {
-        width: 100%;
-        text-align: center; 
-    }
-
-    .top {
-        padding: 5px;
-        font-size: 1.3rem;
-    }
-
-    #sign-up-form {
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
-        height: 100%;
-        font-size: 1rem;
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 1.3rem;
-        margin-bottom: 8px;
-    }
-
-    fieldset {
-        flex-direction: column;
-    }
-
-    .form-group {
-        width: 100%;
-        margin: 3px 0;
-    }
-
-    input {
-        height: 1.5rem;
-        font-size: 1.1rem;
-    }
-
-    .bottom {
-        padding: 20px;
-    }
-
-    button {
-        padding: 10px 50px;
-        margin: 15px 0;
-        font-size: 1.3rem;
-    }
-
-    .login {
-        font-size: 1.2rem;
-    }
 }
-
-@media (min-width: 401px) and (max-width: 600px){
-    .main-wrapper {
-        flex-direction: column;
-    }
-
-    .left-frame {
-        width: 100%;
-        background-image: url(/images/sign-up-bg-small.png);
-    }
-
-    .logo {
-        position: static;
-        height: 110px;
-    }
-
-    .logo-img {
-        width: 90px;
-        height: 90px;
-    }
-
-    .logo-text {
-        font-size: 4.25rem;
-    }
-
-    .right-frame {
-        width: 100%;
-        text-align: center; 
-    }
-
-    .top {
-        padding: 10px;
-        font-size: 1.5rem;
-    }
-
-    #sign-up-form {
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
-        height: 100%;
-        font-size: 1.2rem;
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 1.6rem;
-        margin-bottom: 8px;
-    }
-
-    fieldset {
-        flex-direction: column;
-    }
-
-    .form-group {
-        width: 100%;
-        margin: 3px 0;
-    }
-
-    input {
-        height: 1.7rem;
-        font-size: 1.3rem;
-    }
-
-    .bottom {
-        padding: 20px;
-    }
-
-    button {
-        padding: 10px 50px;
-        margin: 15px 0;
-        font-size: 1.5rem;
-    }
-
-    .login {
-        font-size: 1.5rem;
-    }
-}
-
-@media (min-width: 601px) and (max-width: 830px){
-    .main-wrapper {
-        flex-direction: column;
-    }
-
-    .left-frame {
-        width: 100%;
-        background-image: url(/images/sign-up-bg-small.png);
-    }
-
-    .logo {
-        position: static;
-    }
-
-    .right-frame {
-        width: 100%;
-        text-align: center; 
-    }
-
-    .top {
-        font-size: 1.6rem;
-        padding: 15px;
-    }
-
-    #sign-up-form {
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
-        height: 100%;
-        font-size: 1.1rem;
-        padding: 15px;
-    }
-
-
-    fieldset {
-        flex-direction: column;
-    }
-
-    .form-group {
-        width: 100%;
-        margin: 5px 0;
-    }
-
-    .bottom {
-        padding: 15px;
-    }
-
-    button {
-        padding: 10px 50px;
-        margin: 20px 0;
-    }
-}
-
-/* @media (max-width: 480px){
-    .main-wrapper {
-        flex-direction: column;
-        height: 100vh;
-    }
-
-    .left-frame {
-        width: 100%;
-        background-image: url(/images/sign-up-bg-small.png);
-    }
-
-    .logo {
-        position: static;
-        height: 100px;
-    }
-
-    .logo-img {
-        width: 90px;
-        height: 90px;
-    }
-    
-    .logo-text {
-        font-size: 4rem;
-    }
-
-    .top {
-        font-size: 1.5rem;
-        padding: 10px 10px;
-    }
-
-    #sign-up-form {
-        width: 80%;
-    }
-
-    h1 {
-        font-size: 1.7rem;
-    }
-
-    fieldset {
-        flex-direction: column;
-    }
-
-    button {
-        font-size: 1.3rem;
-        padding: 10px 50px;
-        margin: 20px;
-    }
-    
-    .login {
-        font-size: 1.2rem;
-    }
-} */
-
-
