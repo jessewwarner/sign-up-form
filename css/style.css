@@ -20,13 +20,13 @@ fieldset,
 .main-wrapper {
     max-width: 1080px;
     min-height: 960px;
+    height: 100vh;
     width: 100%;
     margin: 0 auto;
     background-color: rgb(160, 160, 160);
 }
 
 .left-frame {
-    height: 100vh;
     width: 40%;
     background-image: url(/images/sign-up-bg-large.png);
     background-size: cover;
@@ -38,7 +38,7 @@ fieldset,
     align-items: center;
     background-color: rgba(0, 0, 0, 0.6);
     position: relative;
-    top: 200px;
+    top: calc(35% - 150px);
     padding: 15px;
 }
 
@@ -50,24 +50,21 @@ fieldset,
 }
 
 .logo-text {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 6rem;
     color: wheat;
-
 }
 
 .right-frame {
     flex-direction: column;
-    width: 60%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 60%;
 }
 
 .top {
     flex-direction: column;
     justify-content: flex-end;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2rem;
-    height: 35vh;
+    height: 35%;
     padding: 30px
 }
 
@@ -83,16 +80,30 @@ label {
 form {
     flex-direction: column;
     justify-content: center;
-    height: 30vh;
+    height: 30%;
+    width: 95%;
     background-color: rgb(36, 36, 36);
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: wheat;
     padding: 30px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 3px black;
 }
 
 .form-group{
     width: 50%;
     margin: 10px 0px;
+}
+
+input {
+    width: 95%;
+    height: 2rem;
+    font-size: 1.35rem;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin-bottom: 4px;
 }
 
 legend {
@@ -109,22 +120,13 @@ fieldset {
     border: none;
 }
 
-input {
-    width: 90%;
-    height: 2rem;
-    font-size: 1.25rem;
-    padding-left: 10px;
-    border-radius: 5px;
-    margin-bottom: 4px;
-}
-
 .pwd-match-error {
     font-size: 0.75rem;
     color: red;
 }
 
 .bottom {
-    height: 35vh;
+    height: 35%;
     padding: 30px;
 }
 
@@ -146,3 +148,265 @@ a {
     text-decoration: none;
     color: rgb(20, 20, 77);
 }
+
+@media (max-width: 400px){
+    .main-wrapper {
+        flex-direction: column;
+    }
+
+    .left-frame {
+        width: 100%;
+        background-image: url(/images/sign-up-bg-small.png);
+    }
+
+    .logo {
+        position: static;
+        height: 90px;
+    }
+
+    .logo-img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .logo-text {
+        font-size: 3.5rem;
+    }
+
+    .right-frame {
+        width: 100%;
+        text-align: center; 
+    }
+
+    .top {
+        padding: 5px;
+        font-size: 1.3rem;
+    }
+
+    #sign-up-form {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 100%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+
+    fieldset {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100%;
+        margin: 3px 0;
+    }
+
+    input {
+        height: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .bottom {
+        padding: 20px;
+    }
+
+    button {
+        padding: 10px 50px;
+        margin: 15px 0;
+        font-size: 1.3rem;
+    }
+
+    .login {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 600px){
+    .main-wrapper {
+        flex-direction: column;
+    }
+
+    .left-frame {
+        width: 100%;
+        background-image: url(/images/sign-up-bg-small.png);
+    }
+
+    .logo {
+        position: static;
+        height: 110px;
+    }
+
+    .logo-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .logo-text {
+        font-size: 4.25rem;
+    }
+
+    .right-frame {
+        width: 100%;
+        text-align: center; 
+    }
+
+    .top {
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+
+    #sign-up-form {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 100%;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+    }
+
+    fieldset {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100%;
+        margin: 3px 0;
+    }
+
+    input {
+        height: 1.7rem;
+        font-size: 1.3rem;
+    }
+
+    .bottom {
+        padding: 20px;
+    }
+
+    button {
+        padding: 10px 50px;
+        margin: 15px 0;
+        font-size: 1.5rem;
+    }
+
+    .login {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 830px){
+    .main-wrapper {
+        flex-direction: column;
+    }
+
+    .left-frame {
+        width: 100%;
+        background-image: url(/images/sign-up-bg-small.png);
+    }
+
+    .logo {
+        position: static;
+    }
+
+    .right-frame {
+        width: 100%;
+        text-align: center; 
+    }
+
+    .top {
+        font-size: 1.6rem;
+        padding: 15px;
+    }
+
+    #sign-up-form {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 100%;
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+
+
+    fieldset {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .bottom {
+        padding: 15px;
+    }
+
+    button {
+        padding: 10px 50px;
+        margin: 20px 0;
+    }
+}
+
+/* @media (max-width: 480px){
+    .main-wrapper {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .left-frame {
+        width: 100%;
+        background-image: url(/images/sign-up-bg-small.png);
+    }
+
+    .logo {
+        position: static;
+        height: 100px;
+    }
+
+    .logo-img {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .logo-text {
+        font-size: 4rem;
+    }
+
+    .top {
+        font-size: 1.5rem;
+        padding: 10px 10px;
+    }
+
+    #sign-up-form {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    fieldset {
+        flex-direction: column;
+    }
+
+    button {
+        font-size: 1.3rem;
+        padding: 10px 50px;
+        margin: 20px;
+    }
+    
+    .login {
+        font-size: 1.2rem;
+    }
+} */
+
+
