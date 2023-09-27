@@ -98,6 +98,11 @@ form {
     margin: 10px 0px;
 }
 
+.error {
+    border: 3px solid red;
+    background-color: lightpink;
+}
+
 input {
     width: 95%;
     height: 2rem;
@@ -105,6 +110,14 @@ input {
     padding-left: 10px;
     border-radius: 5px;
     margin-bottom: 4px;
+    border: 3px solid rgb(255, 204, 109);
+}
+
+input:focus{
+    outline: none;
+    border: 3px solid rgb(0, 2, 95);
+    background-color: rgb(0, 255, 234);
+    box-shadow: 0 0 3px 3px aquamarine;
 }
 
 legend {
@@ -148,17 +161,6 @@ a {
     font-weight: 700;
     text-decoration: none;
     color: rgb(20, 20, 77);
-}
-
-input {
-    border: 3px solid rgb(255, 204, 109);
-}
-
-input:focus{
-    outline: none;
-    border: 3px solid rgb(0, 2, 95);
-    background-color: rgb(0, 255, 234);
-    box-shadow: 0 0 3px 3px aquamarine;
 }
 
 @media (max-width: 850px){
