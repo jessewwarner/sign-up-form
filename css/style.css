@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'norse';
+    src: url('../fonts/Norse-Bold.woff2') format('woff2');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -50,7 +55,8 @@ fieldset,
 }
 
 .logo-text {
-    font-size: 6rem;
+    font-family: 'norse', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 6.5rem;
     color: wheat;
     padding: 10px;
 }
@@ -78,10 +84,10 @@ label {
     margin-bottom: 4px;
 }
 
-form {
+#sign-up-form {
     flex-direction: column;
     justify-content: center;
-    height: 30%;
+    height: 35%;
     width: 95%;
     background-color: rgb(36, 36, 36);
     font-size: 1.2rem;
@@ -163,13 +169,26 @@ a {
     color: rgb(20, 20, 77);
 }
 
-@media (max-width: 850px){
-    :root {
-        font-size: 0.95em;
+@media (max-width: 920px){
+    #sign-up-form {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        height: 100%;
+        padding: 10px;
     }
 
-    .logo {
-        height: 135px;
+    fieldset {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100%;
+        margin: 3px 0;
+    }
+
+    h1 {
+        margin-bottom: 8px;
     }
 }
 
@@ -205,19 +224,6 @@ a {
         padding: 10px;
     }
 
-    h1 {
-        margin-bottom: 8px;
-    }
-
-    fieldset {
-        flex-direction: column;
-    }
-
-    .form-group {
-        width: 100%;
-        margin: 3px 0;
-    }
-
     .bottom {
         padding: 15px;
     }
@@ -243,6 +249,6 @@ a {
     }
 
     .logo {
-        height: 90px;
+        height: 100px;
     }
 }
